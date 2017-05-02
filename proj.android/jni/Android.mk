@@ -13,9 +13,24 @@ LOCAL_MODULE_FILENAME := libMyGame
 
 LOCAL_SRC_FILES := hellocpp/main.cpp \
                    ../../Classes/AppDelegate.cpp \
-                   ../../Classes/HelloWorldScene.cpp
+                   ../../Classes/MainScene.cpp \
+				   ../../Classes/CloseScene.cpp \
+				   ../../Classes/SettingsScene.cpp \
+				   ../../Classes/EnterPlayerScene.cpp \
+				   ../../Classes/LeaderboardScene.cpp \
+				   ../../Classes/GameScene/GameScene.cpp \
+				   ../../Classes/GameScene/Bullet.cpp \
+				   ../../Classes/GameScene/Enemy.cpp \
+				   ../../Classes/GameScene/GameMenuScene.cpp \
+				   ../../Classes/GameScene/GameManager.cpp \
+				   ../../Classes/GameScene/Player.cpp \
+				   ../../Classes/GameScene/Bonus.cpp \
+				   ../../Classes/GameScene/LevelCompleteScene.cpp \
+				   ../../Classes/GameSettings.cpp 
 
-LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes
+LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes \
+				   ../../Classes/GameScene \
+				   ../../Classes/rapidjson
 
 # _COCOS_HEADER_ANDROID_BEGIN
 # _COCOS_HEADER_ANDROID_END
